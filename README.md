@@ -41,5 +41,6 @@ Built to mirror **real Nokia internal tools**, this dashboard:
     npm install
 
 3. **Run Project**
+
     npm run prestart
     npm start
