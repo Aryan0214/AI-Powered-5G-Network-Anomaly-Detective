@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# AI-Powered 5G Network Anomaly Detective
+A React/Redux dashboard simulating Nokia-grade 5G network monitoring. Recently Nokia had been trying to test their 5G networks in different remote areas So I decided to create a Dashboard in which if your local machine is connected to  WiFi or any other network connection then this react web app will track the Latency, Signal Strength and Throughput of the network every 2 seconds and will raise Active alerts if latency gets higher then 100ms currently it uses mock data from Faker but can be used for live network strength tracking by connecting it to real API of Nokia. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![alt text](image.png)
 
-## Available Scripts
 
-In the project directory, you can run:
+## **Why This Project?**  
+Built to mirror **real Nokia internal tools**, this dashboard:  
+- Simulates live 5G KPIs (latency, throughput, signal strength) using mock data.  
+- Detects anomalies (e.g., latency >100ms) in real-time.  
+- Currently uses Faker to generate mock data but can be linked to *OpenAI ChatGPT-4o* to suggest the solution *as if a Nokia engineer wrote them*.  
+- Designed to **stand out in Nokia’s UI Web Developer intern hiring process** by demonstrating:  
+  - **5G domain awareness** (terminology, common issues).  
+  - **Clean, responsive UI** (TailwindCSS, dark theme).  
+  - **Redux-powered state management** for scalable data flow.  
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Tech Stack**  
+| Category       | Tech Used |  
+|----------------|-----------|  
+| Frontend       | React, Redux, Chart.js |  
+| Styling        | TailwindCSS (Nokia-like dark theme) |  
+| Data Simulation| Faker.js for realistic 5G logs |  
+| AI Integration | OpenAI GPT-4 API |  
+| Live Updates   | 2-second auto-refresh with dynamic graphs |  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## **Key Features** 
+- Randomized but realistic metrics (latency, signal drops, throughput).  
+- Historical data visualized with **Chart.js**.  
+- Redux-triggered alerts when thresholds are breached.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 🛠 **How to Run This Project**  
+1. **Clone the repo**  
+   ```bash  
+   git clone [your-repo-url]  
+   cd nokia-5g-ai
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies**  
+    npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. **Run Project**
+    npm run prestart
+    npm start
